@@ -1,0 +1,41 @@
+@import '../../index.scss';
+
+.add-lyrics-modal-content {
+  input {
+    width: 90%;
+    max-width: 500px;
+    background: $background-4;
+    border: 1px solid $primary-text;
+    border-radius: $border-radius;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    color: $primary-text;
+  }
+  textarea {
+    width: 90%;
+    max-width: 500px;
+    padding: 1rem;
+
+    margin: 0 auto;
+    background: $background-4;
+    border: 1px solid $primary-text;
+    border-radius: $border-radius;
+    color: $primary-text;
+  }
+  .actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+
+    button {
+      border-radius: $border-radius;
+      padding: 0.5rem;
+    }
+  }
+
+  .content {
+    display: flex;
+  }
+}

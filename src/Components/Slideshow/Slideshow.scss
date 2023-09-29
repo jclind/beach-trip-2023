@@ -1,0 +1,102 @@
+@import '../../index.scss';
+
+.slideshow-page {
+  height: 100%;
+  width: 100%;
+
+  .slideshow-actions {
+    // position: absolute;
+
+    .slides-index,
+    button {
+      position: absolute;
+      top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      height: 35px;
+      background: none;
+      border: none;
+    }
+    .slides-index {
+      left: 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: $tertiary-text;
+      .text {
+        margin: auto;
+        user-select: none;
+      }
+    }
+
+    button.close-slideshow {
+      right: 1rem;
+      width: 35px;
+      border-radius: $border-radius;
+
+      transition: all 0.2s ease-in-out;
+      .icon {
+        height: 25px;
+        width: 25px;
+        color: $tertiary-text;
+        margin: auto;
+      }
+
+      &:hover {
+        background: $card-background;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    div {
+      user-select: none;
+    }
+  }
+
+  .song-title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    padding-bottom: 4rem;
+    color: $primary-text;
+  }
+
+  .lyrics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    pointer-events: none;
+
+    .song-title {
+      position: absolute;
+      top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      color: $tertiary-text;
+      font-weight: 600;
+      letter-spacing: 0;
+      height: 35px;
+    }
+
+    .lyric {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $primary-text;
+    }
+  }
+  .not-equal-gap {
+    gap: 1.1rem;
+  }
+}
